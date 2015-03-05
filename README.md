@@ -24,10 +24,10 @@ https://panel.cloudatcost.com/api/v1/
 
 # Function list
 ```
-/api/v1/listservers
-/api/v1/listtemplates
-/api/v1/listtasks
-/api/v1/poweropp
+/api/v1/listservers.php
+/api/v1/listtemplates.php
+/api/v1/listtasks.php
+/api/v1/poweropp.php
 ```
 
 # Standard response
@@ -57,7 +57,7 @@ List all servers on the account
 
 REQUEST
 
-GET https://panel.cloudatcost.com/api/v1/listservers
+GET https://panel.cloudatcost.com/api/v1/listservers.php
 
 PARAMS 
 
@@ -67,7 +67,7 @@ login = example@example.com
 
 EXAMPLE
 ```
-curl https://panel.cloudatcost.com/api/v1/listservers?key=KEY&login=example@example.com
+curl https://panel.cloudatcost.com/api/v1/listservers.php?key=KEY&login=example@example.com
 ```
 Output:
 ```json
@@ -114,7 +114,7 @@ List all templates available
 
 REQUEST
 
-GET https://panel.cloudatcost.com/api/v1/listtemplates
+GET https://panel.cloudatcost.com/api/v1/listtemplates.php
 
 PARAMS 
 
@@ -124,7 +124,7 @@ login = example@example.com
 
 EXAMPLE
 ```
-curl https://panel.cloudatcost.com/api/v1/listtemplates?key=KEY&login=example@example.com
+curl https://panel.cloudatcost.com/api/v1/listtemplates.php?key=KEY&login=example@example.com
 ```
 Output:
 ```json
@@ -200,7 +200,7 @@ List all tasks in operation
 
 REQUEST
 
-GET https://panel.cloudatcost.com/api/v1/listtasks
+GET https://panel.cloudatcost.com/api/v1/listtasks.php
 
 PARAMS 
 
@@ -210,7 +210,7 @@ login = example@example.com
 
 EXAMPLE
 ```
-curl https://panel.cloudatcost.com/api/v1/listtasks?key=KEY&login=example@example.com
+curl https://panel.cloudatcost.com/api/v1/listtasks.php?key=KEY&login=example@example.com
 ```
 Output:
 ```json
@@ -248,7 +248,7 @@ Activate server power operations
 
 REQUEST
 
-POST https://panel.cloudatcost.com/api/v1/poweropp
+POST https://panel.cloudatcost.com/api/v1/poweropp.php
 
 PARAMS
 
@@ -262,7 +262,7 @@ action = poweron,poweroff,reset
 
 EXAMPLE
 ```
-curl --data "key=KEY&login=example@example.com&sid=12345&action=reset" https://panel.cloudatcost.com/api/v1/poweropp
+curl --data "key=KEY&login=example@example.com&sid=12345&action=reset" https://panel.cloudatcost.com/api/v1/poweropp.php
 ```
 
 Output:
@@ -295,7 +295,7 @@ Request URL for console access
 
 REQUEST
 
-POST https://panel.cloudatcost.com/api/v1/console
+POST https://panel.cloudatcost.com/api/v1/console.php
 
 PARAMS
 
@@ -307,7 +307,7 @@ sid = SERVERID
 
 EXAMPLE
 ```
-curl --data "key=KEY&login=example@example.com&sid=12345" https://panel.cloudatcost.com/api/v1/console
+curl --data "key=KEY&login=example@example.com&sid=12345" https://panel.cloudatcost.com/api/v1/console.php
 ```
 
 Output:
