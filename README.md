@@ -27,7 +27,7 @@ https://panel.cloudatcost.com/api/v1/
 /api/v1/listservers.php
 /api/v1/listtemplates.php
 /api/v1/listtasks.php
-/api/v1/poweropp.php
+/api/v1/powerop.php
 /api/v1/console.php
 ```
 
@@ -249,7 +249,7 @@ Activate server power operations
 
 REQUEST
 
-POST https://panel.cloudatcost.com/api/v1/poweropp.php
+POST https://panel.cloudatcost.com/api/v1/powerop.php
 
 PARAMS
 
@@ -263,7 +263,7 @@ action = poweron,poweroff,reset
 
 EXAMPLE
 ```
-curl --data "key=KEY&login=example@example.com&sid=12345&action=reset" https://panel.cloudatcost.com/api/v1/poweropp.php
+curl --data "key=KEY&login=example@example.com&sid=12345&action=reset" https://panel.cloudatcost.com/api/v1/powerop.php
 ```
 
 Output:
