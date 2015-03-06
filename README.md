@@ -12,6 +12,10 @@ https://panel.cloudatcost.com/api/v1/
 3. Generate an api key and insert IP information into your account settings
 4. Use curl to access the panel api via the IP documented as well as key and login username/email
 
+# Community contributions/wrappers
+Node - https://github.com/dlion/node-catc
+Python - https://github.com/adc4392/python-cloudatcost
+
 # HTTP response codes
 ```
 200 Success
