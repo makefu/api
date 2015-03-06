@@ -28,6 +28,7 @@ https://panel.cloudatcost.com/api/v1/
 /api/v1/listtemplates.php
 /api/v1/listtasks.php
 /api/v1/poweropp.php
+/api/v1/console.php
 ```
 
 # Standard response
