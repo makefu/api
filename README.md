@@ -10,6 +10,7 @@ https://panel.cloudatcost.com/api/v1/
 1. Sign into your account at https://panel.cloudatcost.com
 2. Click 'settings'
 3. Generate an api key and insert IP information into your account settings
+  - For access from multiple IP's, comma deliminate them 
 4. Use curl to access the panel api via the IP documented as well as key and login username/email
 
 # Community contributions/wrappers
