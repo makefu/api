@@ -16,6 +16,7 @@ https://panel.cloudatcost.com/api/v1/
 # Community contributions/wrappers
 - Node - https://github.com/dlion/node-catc
 - Python - https://github.com/adc4392/python-cloudatcost
+  - Python CLI Console - https://github.com/foospidy/CACConsole
 - Go - https://github.com/dottorblaster/cloudatgost 
 
 # HTTP response codes
