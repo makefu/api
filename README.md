@@ -64,7 +64,8 @@ Error:
 {
   "status": "error",
     "time": 1425064819,
-    "id": "90000"
+    "error": 104,
+    "error_description":"invalid ip address connection"
 }
 ```
 
