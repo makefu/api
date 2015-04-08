@@ -440,8 +440,6 @@ Output:
 ```
 
 #TODO
-Metric information
-
-Renaming
-
-Reimaging
+- reimaging
+- deploy/delete
+- update metric details (currently manual on control panel login)
