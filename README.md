@@ -249,7 +249,7 @@ Output:
       "finishtime": "1425504094",
       "servername":"c1115850-28047",
       "ip":"1.1.1.1",
-      "lable":null
+      "label":null,
       "rdns":"c1115850-28047.cloudatcost.com",
       "rdnsdefault":"ptr-not-configured.cloudatcost"
     },
