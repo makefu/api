@@ -318,6 +318,51 @@ Unsuccessful:
 }
 ```
 
+## Rename server
+Rename the server label
+
+REQUEST
+
+POST https://panel.cloudatcost.com/api/v1/renameserver.php
+
+PARAMS
+
+key = KEY
+
+login = example@example.com
+
+sid = SERVERID
+
+name = NAME
+
+EXAMPLE
+```
+curl --data "key=KEY&login=example@example.com&sid=12345&name=localhost" https://panel.cloudatcost.com/api/v1/renameserver.php
+```
+
+Output:
+
+Success:
+```json
+{
+  "status": "ok",
+    "time": 1425504815,
+    "api": "v1",
+    "serverid": "254513205",
+    "result": "successful"
+}
+```
+
+Unsuccessful:
+```json
+{
+  "status": "error",
+    "time": 1425505065,
+    "error": 109,
+    "error_description": "invalid server ID"
+}
+```
+
 ## Console
 Request URL for console access
 
