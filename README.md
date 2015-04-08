@@ -249,7 +249,7 @@ Output:
       "finishtime": "1425504094",
       "servername":"c1115850-28047",
       "ip":"1.1.1.1",
-      "label":null,
+      "label":"mysql server",
       "rdns":"c1115850-28047.cloudatcost.com",
       "rdnsdefault":"ptr-not-configured.cloudatcost"
     },
@@ -263,7 +263,7 @@ Output:
       "finishtime": "1425504312",
       "servername":"c1115860-28047",
       "ip":"1.1.1.1",
-      "label":"CentOS 6.5",
+      "label":"centos server",
       "rdns":"c1115860-28047.cloudatcost.com",
       "rdnsdefault":"ptr-not-configured.cloudatcost"
     }
