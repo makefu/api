@@ -363,6 +363,51 @@ Unsuccessful:
 }
 ```
 
+## Modify reverse DNS
+Modify the reverse DNS & hostname of the VPS
+
+REQUEST
+
+POST https://panel.cloudatcost.com/api/v1/rdns.php
+
+PARAMS
+
+key = KEY
+
+login = example@example.com
+
+sid = SERVERID
+
+hostname = HOSTNAME
+
+EXAMPLE
+```
+curl --data "key=KEY&login=example@example.com&sid=12345&hostname=localhost.domain.com" https://panel.cloudatcost.com/api/v1/rdns.php
+```
+
+Output:
+
+Success:
+```json
+{
+  "status": "ok",
+    "time": 1425504815,
+    "api": "v1",
+    "serverid": "254513205",
+    "result": "successful"
+}
+```
+
+Unsuccessful:
+```json
+{
+  "status": "error",
+    "time": 1425505065,
+    "error": 109,
+    "error_description": "invalid domain name"
+}
+```
+
 ## Console
 Request URL for console access
 
