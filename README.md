@@ -22,6 +22,11 @@ https://panel.cloudatcost.com/api/v1/
 - PHP - https://github.com/fdisotto/cac-api
 - Ruby - https://github.com/cloudatcost/ruby-gem
 
+# Community mobile applications
+- Android/iOS by Andreas Gassmann
+  - https://itunes.apple.com/en/app/cloudatcost/id975360892
+  - https://play.google.com/store/apps/details?id=com.cloudatcostapp.app
+
 # HTTP response codes
 ```
 200 Success
@@ -92,6 +97,7 @@ Output:
       "CustID": "90001",
       "packageid": "21579",
       "servername": "localhost",
+      "lable": "api-test",
       "label": "api-test",
       "vmname": "c90001-iOD-848113",
       "ip": "1.2.3.4",
@@ -239,7 +245,12 @@ Output:
       "action": "reset",
       "status": "completed",
       "starttime": "1425504093",
-      "finishtime": "1425504094"
+      "finishtime": "1425504094",
+      "servername":"c1115850-28047",
+      "ip":"1.1.1.1",
+      "lable":null
+      "rdns":"c1115850-28047.cloudatcost.com",
+      "rdnsdefault":"ptr-not-configured.cloudatcost"
     },
     {
       "cid": "734103810",
@@ -248,7 +259,12 @@ Output:
       "action": "reset",
       "status": "pending",
       "starttime": "1425504295",
-      "finishtime": "1425504312"
+      "finishtime": "1425504312",
+      "servername":"c1115860-28047",
+      "ip":"1.1.1.1",
+      "label":"CentOS 6.5",
+      "rdns":"c1115860-28047.cloudatcost.com",
+      "rdnsdefault":"ptr-not-configured.cloudatcost"
     }
   ]
 }
