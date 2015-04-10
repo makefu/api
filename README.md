@@ -43,6 +43,8 @@ https://panel.cloudatcost.com/api/v1/
 /api/v1/listtemplates.php
 /api/v1/listtasks.php
 /api/v1/powerop.php
+/api/v1/renameserver.php
+/api/v1/rdns.php
 /api/v1/console.php
 ```
 
