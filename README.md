@@ -121,7 +121,9 @@ Output:
       "panel_note": "",
       "mode": "Normal",
       "uid": "619712052",
-      "sid": "240294"
+      "sid": "240294",
+      "rdns":"c90001-iOD-848113.cloudatcost.com",
+      "rdnsdefault":"ptr-not-configured.cloudatcost"
     }
   ]
 }
