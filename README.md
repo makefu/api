@@ -48,6 +48,14 @@ https://panel.cloudatcost.com/api/v1/
 /api/v1/console.php
 ```
 
+Cloud-pro-only
+
+```
+/api/v1/cloudpro/build.php
+/api/v1/cloudpro/delete.php
+/api/v1/cloudpro/resources.php
+```
+
 # Standard response
 Usual response to each query:
 
@@ -443,7 +451,146 @@ Output:
 }
 ```
 
+## CLOUD PRO: Build server
+Build a server from available resources
+
+REQUEST
+
+POST https://panel.cloudatcost.com/api/v1/cloudpro/build.php
+
+PARAMS
+
+key = KEY
+
+login = example@example.com
+
+cpu = 1/2/3/4/5/6/7/8/9
+
+ram = 1024 (must be multiple of 4. ex. 1024 / 2048 / 3096)
+
+storage = 10/20/30/40/50 ... etc
+
+os = 75 (must be an #id from /v1/listtemplates.php)
+
+EXAMPLE
+```
+curl -v --data "key=KEY&login=example@example.com&cpu=1&ram=1024&storage=30&os=75&action=build" https://panel.cloudatcost.com/api/v1/cloudpro/buildserver.php
+
+```
+
+Success output:
+```json
+{
+  "status":"ok",
+  "time":1429119324,
+  "api":"v1",
+  "action":"build",
+  "taskid":726492791437,
+  "result":"successful"
+}
+```
+
+Failure output:
+```json
+{
+  "status":"error",
+  "time":1429119324,
+  "error":"107",
+  "error_description":"Not Enough RAM",
+}
+```
+
+Notes: 
+  - SSH-key and login details are found within
+  - Build command is added to tasklist and set to pending until complete
+
+## CLOUD PRO: Delete server
+Delete / terminate server to add resources.
+
+REQUEST
+
+POST https://panel.cloudatcost.com/api/v1/cloudpro/delete.php
+
+PARAMS
+
+key = KEY
+
+login = example@example.com
+
+sid = SERVERID
+
+EXAMPLE
+```
+curl --data "key=KEY&login=example@example.com&sid=12345" https://panel.cloudatcost.com/api/v1/cloudpro/delete.php
+```
+
+Success output:
+```json
+{
+  "status":"ok",
+  "time":1429119324,
+  "api":"v1",
+  "action":"delete",
+  "taskid":726492791437,
+  "result":"successful"
+}
+```
+
+Failure output:
+```json
+{
+  "status":"error",
+  "time":1429119324,
+  "error":"107",
+  "error_description":"Invalid Server Permission"
+}
+```
+
+Notes: 
+  - Delete command is added to tasklist and set to pending until complete
+
+## CLOUD PRO: Resources
+Display resources available and resources used in cloud-pro
+
+REQUEST
+
+GET https://panel.cloudatcost.com/api/v1/cloudpro/resources.php
+
+PARAMS
+
+key = KEY
+
+login = example@example.com
+
+EXAMPLE
+```
+curl "https://panel.cloudatcost.com/api/v1/cloudpro/resources.php?key=KEY&login=example@example.com"
+```
+
+Success output:
+```json
+{
+    "status": "ok",
+    "time": 1429120346,
+    "api": "v1",
+    "action": "resources",
+    "data": {
+        "total": [
+            {
+                "cpu_total": "8",
+                "ram_total": "8192",
+                "storage_total": "120"
+            }
+        ],
+        "used": {
+            "cpu_used": "3",
+            "ram_used": "3072",
+            "storage_used": "90"
+        }
+    }
+}
+```
+
 #TODO
 - reimaging
-- deploy/delete
 - update metric details (currently manual on control panel login)
