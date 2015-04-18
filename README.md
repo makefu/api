@@ -18,6 +18,7 @@ https://panel.cloudatcost.com/api/v1/
 - Python - https://github.com/adc4392/python-cloudatcost
 - Python CLI Console - https://github.com/foospidy/CACConsole
 - Go - https://github.com/dottorblaster/cloudatgost 
+- Go - https://github.com/masayukioguni/go-cloudatcost
 - .NET - https://github.com/mirhagk/CloudAtCostAPI
 - PHP - https://github.com/fdisotto/cac-api
 - Ruby - https://github.com/cloudatcost/ruby-gem
