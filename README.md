@@ -47,6 +47,7 @@ https://panel.cloudatcost.com/api/v1/
 /api/v1/renameserver.php
 /api/v1/rdns.php
 /api/v1/console.php
+/api/v1/runmode.php
 ```
 
 Cloud-pro-only
@@ -328,6 +329,50 @@ Unsuccessful:
     "time": 1425505065,
     "error": 105,
     "error_description": "task already running"
+}
+```
+## Run mode
+Set the run mode of the server to either 'normal' or 'safe'. Safe automatically turns off the server after 7 days of idle usage. Normal keeps it on indefinitely. 
+
+REQUEST
+
+POST https://panel.cloudatcost.com/api/v1/runmode.php
+
+PARAMS
+
+key = KEY
+
+login = example@example.com
+
+sid = SERVERID
+
+mode = normal/safe
+
+EXAMPLE
+```
+curl --data "key=KEY&login=example@example.com&sid=12345&mode=normal" https://panel.cloudatcost.com/api/v1/runmode.php
+```
+
+Output:
+
+Success:
+```json
+{
+  "status": "ok",
+    "time": 1425504815,
+    "api": "v1",
+    "serverid": "254513205",
+    "result": "successful"
+}
+```
+
+Unsuccessful:
+```json
+{
+  "status": "error",
+    "time": 1425505065,
+    "error": 109,
+    "error_description": "invalid server ID"
 }
 ```
 
