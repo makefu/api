@@ -520,7 +520,7 @@ os = 75 (must be an #id from /v1/listtemplates.php)
 
 EXAMPLE
 ```
-curl -v --data "key=KEY&login=example@example.com&cpu=1&ram=1024&storage=30&os=75" https://panel.cloudatcost.com/api/v1/cloudpro/buildserver.php
+curl -v --data "key=KEY&login=example@example.com&cpu=1&ram=1024&storage=30&os=75" https://panel.cloudatcost.com/api/v1/cloudpro/build.php
 
 ```
 
