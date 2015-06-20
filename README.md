@@ -510,7 +510,7 @@ key = KEY
 
 login = example@example.com
 
-cpu = 1/2/3/4/5/6/7/8/9
+cpu = 1/2/3/4/5/6/7/8
 
 ram = 1024 (must be multiple of 4. ex. 1024 / 2048 / 3096)
 
