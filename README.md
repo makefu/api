@@ -511,10 +511,13 @@ key = KEY
 login = example@example.com
 
 cpu = 1/2/3/4/5/6/7/8
+limit: 16
 
 ram = 1024 (must be multiple of 4. ex. 1024 / 2048 / 3096)
+limit: 32768
 
 storage = 10/20/30/40/50 ... etc
+limit: 1000
 
 os = 75 (must be an #id from /v1/listtemplates.php)
 
