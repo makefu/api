@@ -17,6 +17,7 @@ https://panel.cloudatcost.com/api/v1/
 - Node - https://github.com/dlion/node-catc
 - Python - https://github.com/adc4392/python-cloudatcost
 - Python CLI Console - https://github.com/foospidy/CACConsole
+- Python panel screen-scraper - https://github.com/makefu/cacpanel
 - Go - https://github.com/dottorblaster/cloudatgost 
 - Go - https://github.com/masayukioguni/go-cloudatcost
 - .NET - https://github.com/mirhagk/CloudAtCostAPI
